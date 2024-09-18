@@ -47,6 +47,9 @@
 ![Short Courses](images/pic2.png)
 
 <br>
+# E-Invoice-ERP
+![E-Invoice-ERP](images/e_invoice_erp.png)
+<br>
 
 ## For Frepple User
 In order to utilise the full integration between ERPNext and Frepple, you will need a running instance of Frepple software. To install Frepple software in both Windows and Linux refer to [this document](https://docs.google.com/document/d/1P4U1rZszydwy2LmVAuC4lvYPl-dFw86LSC8Fz8zRsIE/edit?usp=sharing).
