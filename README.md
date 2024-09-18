@@ -50,7 +50,7 @@
 <br>
 
 # E-Invoice-ERP
-![E-Invoice-ERP](images/e_invoice_erp.png)
+![E-Invoice-ERP](images/e_invoice_erpnext.png)
 
 <br>
 
@@ -76,6 +76,7 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
     - [Autocount](https://github.com/msf4-0/ERPNext-Autocount-Integration)
     - [SQL Account](https://github.com/msf4-0/ERPNext-SQL-Accounting-Integration)
     - [Short Courses](https://github.com/Shakila-Sahira/ERPNext-Short-Courses)
+    - [E-Invoice-ERP](https://github.com/hisham733/E-Invoice-ERP)
 
 3. For Windows & MacOS user, start from `Section 3`.
 4. For Ubuntu user, start from `Section 4`.
@@ -109,10 +110,10 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
 ### 5. Setup
 
 1. Clone this repo.
-    - `git clone https://github.com/msf4-0/IRPS-Short_Courses-SQL_Accounting-Autocount-frepple`
+    - `git clone https://github.com/hisham733/E-Invoice_integration`
 
 2. Navigate to the cloned folder.
-    - `cd IRPS-SQL_Accounting-Autocount-frepple`
+    - `cd E-Invoice_integration`
 
 3. In `enx-example`, you can change the variables that would be used in this installation process to your preference such as the following:
     - Server port to host ERPNext,`ERPNEXT_SERVER_PORT`. Default is `8000`.
@@ -138,6 +139,10 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
     - Replace `<project_name>` to the same project name as in step 4.
     - For example, `docker logs project1-site-creator-1 -f`.
     - If you face `no such container` error, try with `docker logs project1-site-creator_1 -f` or `docker logs project1_site-creator_1 -f`.
+
+7. update ERPNext in your Docker container, use the `docker cp` command to copy the folder into the container, specifying the correct container name or ID and destination.
+    - For example, `docker cp erpnext project2-erpnext-python-1:/home/frappe/frappe-bench/apps`
+    - - If you face `no such container` error, try with `docker cp erpnext project1-erpnext-python_1:/home/frappe/frappe-bench/apps` or `docker cp erpnext project1_erpnext-python_1:/home/frappe/frappe-bench/apps`
 
 7. After the `<project_name>-site-creator-1` container display `Scheduler is disabled`, login to `<project_name>-erpnext-python-1` container. Use `docker exec -it --user root <project_name>-erpnext-python-1 /bin/bash` to login into this container as a root user.
     
